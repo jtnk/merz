@@ -1,0 +1,6 @@
+flowchart LR
+    I([Input]) --> P[Parse]
+    P --> L[Layout]
+    L --> R[Render]
+    R --> O([SVG])
+    P -.-> E[/errors/]

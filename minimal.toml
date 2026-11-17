@@ -1,0 +1,15 @@
+# Generated for merz — mirrors tmd's Zig 0.17 toolchain so the two can share code.
+
+[upstream] # Source of software & tooling
+repo = "https://github.com/gominimal/pkgs"
+branch = "main"
+locked_commit = "73809d54567e4359637909ab50da78047d1fc90f"
+
+[stack]
+use = "zig"
+
+[defaults]
+state_key = "dev"
+
+[session] # min session attach
+packages = ["base", "git"]

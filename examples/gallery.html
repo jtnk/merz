@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><title>merz examples</title>
+<style>body{font-family:ui-sans-serif,system-ui,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;color:#1e293b}
+h1{font-weight:650}h2{margin-top:40px;color:#475569;font-size:15px;text-transform:uppercase;letter-spacing:.05em}
+.card{border:1px solid #e2e8f0;border-radius:10px;padding:20px;background:#fff;overflow:auto}
+pre{background:#f8fafc;border-radius:8px;padding:12px;font-size:13px;color:#334155;overflow:auto}</style></head>
+<body><h1>merz — native Zig Mermaid renderer</h1>
+<p>Rendered by the merz binary (no Node, no Chromium).</p>
+<h2>flowchart TD (with a cycle)</h2><pre id="s1"></pre><div class="card"><object data="flow.svg" type="image/svg+xml"></object></div>
+<h2>flowchart LR</h2><pre id="s2"></pre><div class="card"><object data="pipeline.svg" type="image/svg+xml"></object></div>
+<h2>shapes</h2><pre id="s3"></pre><div class="card"><object data="shapes.svg" type="image/svg+xml"></object></div>
+<script>
+fetch('flow.mmd').then(r=>r.text()).then(t=>s1.textContent=t);
+fetch('pipeline.mmd').then(r=>r.text()).then(t=>s2.textContent=t);
+fetch('shapes.mmd').then(r=>r.text()).then(t=>s3.textContent=t);
+</script></body></html>
