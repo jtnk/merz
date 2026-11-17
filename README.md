@@ -3,7 +3,7 @@
 A native Zig [Mermaid](https://mermaid.js.org/) renderer. No Node, no headless
 Chromium — just a small binary that turns Mermaid text into a diagram.
 
-Built as a sibling of [`tmd`](../tmmd), the terminal Markdown viewer, so a
+Built as a sibling of [`tmd`](https://github.com/jtnk/tmd), the terminal Markdown viewer, so a
 ` ```mermaid ` code block can be rendered inline the way images already are.
 Two backends: **SVG** (portable, inspectable) and **PNG** (a raster image ready
 for a terminal's graphics protocol).
